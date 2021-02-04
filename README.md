@@ -1,6 +1,6 @@
 # Weather Journal App
 
-**My Second project during Egypt-FWD initive learning jounary offered by ITIDA**
+**My Second project during Egypt-FWD initiative learning jounary offered by ITIDA**
 
 ---
 
