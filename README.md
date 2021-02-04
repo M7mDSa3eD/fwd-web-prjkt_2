@@ -6,7 +6,7 @@
 
 ## Description
 
-This proejct is about working with APIs and how the connection between server-side and client-side works
+This project is about working with Web APIs and how the connection between server-side and client-side works, I've used OpenWeatherMap API to get the current weather condition based on given Zipcode for the city (US only), and our own server-side api to store the response from OpenWeatherMap API then display the results to the user, all of that happened by using JavaScript and asynchronous function.
 
 ## Instructions
 
