@@ -6,11 +6,15 @@
 
 ## Description
 
+This proejct is about working with APIs and how the connection between server-side and client-side works
+
 ## Instructions
 
-1. Clone ` git clone https://github.com/M7mDSa3eD/fwd-web-prjkt_2.git`
-2. Open folder `fwd-web-prjkt_1`
-3. Open `index.html` in your modern browser.
+1. `git clone https://github.com/M7mDSa3eD/fwd-web-prjkt_2.git`
+2. `cd fwd-web-prjkt_2`
+3. `npm i` - To install dependencies
+4. `node server.js` - To run the server
+5. Open `//localhost:3000` in the browser
 
 ## Technologies
 
@@ -22,6 +26,6 @@
 ## Credits
 
 1. Udacity
-2. FWD
+2. Egypt FWD
 
 **Made by Mohamed Saeed**
