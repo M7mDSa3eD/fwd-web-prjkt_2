@@ -1,8 +1,8 @@
 // OpenWeatherMap API key
-const api_key = "11c808d987e218ec7aa6da6b91d0221e";
+const api_key = "&appId=11c808d987e218ec7aa6da6b91d0221e";
 
 // Base URL for OpenWeatherMap API calls
-const baseURL = `https://api.openweathermap.org/data/2.5/weather`;
+const baseURL = `https://api.openweathermap.org/data/2.5/weather?units=metric&zip=`;
 const baseURLIcon = (iconId) =>
   `http://openweathermap.org/img/wn/${iconId}@2x.png`;
 
@@ -71,14 +71,7 @@ generateButton.addEventListener("click", function generateNewEntry(e) {
 
 const getTheWetherByZipcode = async (zipcode) => {
   // Store the response from the O.W.M API
-  const response = await fetch(
-    `${baseURL}?` +
-      new URLSearchParams({
-        zip: zipcode,
-        units: "metric",
-        appId: api_key,
-      })
-  );
+  const response = await fetch(baseURL + zipcode + api_key);
 
   // Successfully retured data
   try {
