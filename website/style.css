@@ -1,0 +1,178 @@
+:root {
+  --border-radius: 0.25rem;
+  --background: #74596b;
+  --forground: #000;
+  --surface: #fff;
+  --input-primary-bg: #ffffff;
+  --btn-primary-bg: #ae3e3e;
+  --btn-primary-fg: #fff;
+  --btn-primary-bg-hover: #12121250;
+  --btn-primary-fg-hover: #fff;
+  --loading-bg: #ffffffbf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --forground: #f4f4f4;
+    --surface: #252525;
+    --input-primary-bg: #121212;
+    --btn-primary-bg: #ae3e3e;
+    --btn-primary-fg: #fff;
+    --btn-primary-bg-hover: #12121250;
+    --btn-primary-fg-hover: #fff;
+    --loading-bg: #000000bf;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--forground);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.holder {
+  background: var(--surface);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+#entryHolder {
+  text-align: center;
+}
+
+sup {
+  font-size: 0.5em;
+}
+
+.headline {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  background: var(--background);
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+form {
+  width: 30rem;
+  display: block;
+  margin: 3rem auto;
+  padding: 3rem;
+  border: 10px solid #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #111;
+  background-color: #111;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  border: 1px solid #00000030;
+  border-radius: var(--border-radius);
+  background: var(--input-primary-bg);
+  color: var(--forground);
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: var(--btn-primary-bg-hover);
+  color: var(--btn-primary-fg-hover);
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.holder.entry {
+  display: none;
+}
+
+#temp,
+#cond,
+#date,
+#content {
+  font-weight: bold;
+  margin: 0.25rem 0 0;
+}
+
+.title {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--loading-bg);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
